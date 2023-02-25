@@ -59,10 +59,9 @@ with mpose.Pose(min_detection_confidence=0.4, min_tracking_confidence=0.4) as po
         except:
             pass
         
-        image = cv2.putText(image,"Rep count:" + str(rep_count), (20, 460),
+        image = cv2.putText(image,"Rep count:" + str(rep_count), (300, 460),
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,0), 2, cv2.LINE_AA)
-        image = cv2.putText(image,"Intern Hiring Assignment" ,(300, 460),
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,0), 2, cv2.LINE_AA)
+        
         
         cv2.imshow('Mediapipe Feed', image)
 
